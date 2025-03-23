@@ -2,9 +2,14 @@
 
 ## Project Preview
 
+<details>
+<summary>Click to view project preview</summary>
+
+![User Profile](./assets/3.png)
 ![Home Page](./assets/1.png)
 ![Game Details](./assets/2.png)
-![User Profile](./assets/3.png)
+
+</details>
 
 This repository contains two approaches to run the application:
 
