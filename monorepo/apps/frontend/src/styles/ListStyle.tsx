@@ -1,4 +1,3 @@
-// styles/ListStyles.tsx
 import { SxProps, Theme, alpha } from "@mui/material";
 
 type UserListItemStyles = {

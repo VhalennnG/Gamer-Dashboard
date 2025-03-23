@@ -1,8 +1,6 @@
-// styles/cyberTheme.tsx
 import { createTheme } from "@mui/material";
 import { alpha } from "@mui/material/styles";
 
-// Cyber Gaming Theme
 export const cyberTheme = createTheme({
   palette: {
     mode: "dark",
@@ -87,7 +85,6 @@ export const cyberTheme = createTheme({
   },
 });
 
-// Common styles that can be reused
 export const cyberStyles = {
   gradients: {
     background: "linear-gradient(135deg, #121212 0%, #1a1a2e 100%)",

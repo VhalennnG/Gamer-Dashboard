@@ -1,4 +1,3 @@
-// src/apis/userApi.ts
 import axios from "axios";
 import { User } from "@/interfaces/user";
 

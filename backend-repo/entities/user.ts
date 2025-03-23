@@ -1,4 +1,3 @@
-// Define a single User interface
 export interface User {
   id: string;
   email: string;

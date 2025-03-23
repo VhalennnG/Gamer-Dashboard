@@ -10,7 +10,6 @@ const Footer = () => {
   );
 
   const handleEmailClick = () => {
-    // Buka Gmail dengan alamat email yang sudah diisi
     window.open(
       "https://mail.google.com/mail/?view=cm&fs=1&to=fanydanny237@gmail.com",
       "_blank"

@@ -31,12 +31,10 @@ const Dashboard: React.FC = () => {
   const [snackbarMessage, setSnackbarMessage] = useState("");
 
   useEffect(() => {
-    // Fetch all users when component mounts
     dispatch(fetchAllUsers());
   }, [dispatch]);
 
   useEffect(() => {
-    // Fetch selected user details when a user is selected
     if (selectedUserId) {
       dispatch(fetchUserDetails(selectedUserId));
       setEditMode(false);
@@ -44,7 +42,6 @@ const Dashboard: React.FC = () => {
   }, [selectedUserId, dispatch]);
 
   useEffect(() => {
-    // Show feedback when update is complete
     if (updateStatus === "succeeded") {
       setSnackbarMessage("Profile updated successfully!");
       setSnackbarOpen(true);

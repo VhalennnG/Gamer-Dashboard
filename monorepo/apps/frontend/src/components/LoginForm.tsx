@@ -25,7 +25,6 @@ const LoginForm: React.FC = () => {
   const [glowEffect, setGlowEffect] = useState(0);
   const router = useRouter();
 
-  // Simulated glow effect
   useEffect(() => {
     const timer = setInterval(() => {
       setGlowEffect((prev) => (prev + 1) % 100);
@@ -46,13 +45,11 @@ const LoginForm: React.FC = () => {
       );
       const user = userCredential.user;
 
-      // Save token to localStorage
       const token = await user.getIdToken();
       localStorage.setItem("authToken", token);
 
       console.log("user token : ", token);
 
-      // Redirect to main page
       router.push("/dashboard");
     } catch (error: any) {
       setError(error.message || "Failed to login");

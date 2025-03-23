@@ -1,7 +1,6 @@
 import { styled } from "@mui/material/styles";
 import { Button, TextField, Typography, Paper } from "@mui/material";
 
-// Styled components for login form
 export const CyberPaper = styled(Paper)(({ theme }) => ({
   background: "linear-gradient(135deg, #0f1923 0%, #1a2e3b 100%)",
   border: "2px solid #00f3ff",

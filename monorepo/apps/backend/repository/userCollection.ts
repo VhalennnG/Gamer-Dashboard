@@ -1,7 +1,6 @@
 import db from "../config/firebaseConfig";
 import { User } from "../entities/user";
 
-// Membuat collection reference
 const usersCollection = db.collection("USERS");
 
 // Get all users

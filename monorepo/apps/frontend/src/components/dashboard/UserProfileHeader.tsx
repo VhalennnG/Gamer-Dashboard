@@ -27,8 +27,7 @@ const UserProfileHeader: React.FC<UserProfileHeaderProps> = ({
     const file = e.target.files?.[0];
     if (!file) return;
 
-    // Validasi ukuran file - 100KB
-    const maxSize = 100 * 1024; // 100KB dalam bytes
+    const maxSize = 100 * 1024;
     if (file.size > maxSize) {
       setErrorMessage(
         "The file size is too large. The maximum allowed size is 100kB."
@@ -39,10 +38,7 @@ const UserProfileHeader: React.FC<UserProfileHeaderProps> = ({
       return;
     }
 
-    // Hapus pesan error jika ada
     setErrorMessage("");
-
-    // Lanjutkan dengan proses upload
     onImageUpload(e);
   };
 
