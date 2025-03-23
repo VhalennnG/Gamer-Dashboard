@@ -1,5 +1,11 @@
 # GamesHub Repository
 
+## Project Preview
+
+![Home Page](./assets/1.png)
+![Game Details](./assets/2.png)
+![User Profile](./assets/3.png)
+
 This repository contains two approaches to run the application:
 
 1. Standalone repositories (backend-repo and frontend-repo)
