@@ -1,9 +1,15 @@
-# EBUDDY Technical Test Repository
+# GamesHub Repository
 
 This repository contains two approaches to run the application:
 
 1. Standalone repositories (backend-repo and frontend-repo)
-2. Monorepo structure (monorepo folder)
+2. Monorepo structure (monorepo folder using TurboRepo)
+
+## Technologies Used
+
+- **Frontend**: Next.js 14
+- **Backend**: Node.js & Firebase
+- **Monorepo**: TurboRepo
 
 ## Firebase Firestore Setup (Required First)
 
@@ -45,7 +51,7 @@ interface User {
 
 ## Option 1: Standalone Repositories
 
-### Backend Setup (backend-repo)
+### Backend Setup (backend-repo with Node.js)
 
 ```bash
 # Navigate to backend directory
@@ -78,7 +84,7 @@ npm run build
 npm run start
 ```
 
-### Frontend Setup (frontend-repo)
+### Frontend Setup (frontend-repo with Next.js 14)
 
 ```bash
 # Navigate to frontend directory
@@ -123,7 +129,7 @@ npm run build
 npm run start
 ```
 
-## Option 2: Monorepo Structure
+## Option 2: Monorepo Structure with TurboRepo
 
 ### Monorepo Setup
 
@@ -139,7 +145,7 @@ npm install
 
 ```bash
 # Navigate to the nested backend directory
-cd monorepo/apps/backend/ebuddytest
+cd monorepo/apps/backend
 
 # Install dependencies
 npm install
@@ -148,7 +154,7 @@ npm install
 npm run build
 ```
 
-#### Running with Turborepo
+#### Running with TurboRepo
 
 ```bash
 # At the monorepo root
@@ -176,7 +182,7 @@ cd monorepo/apps/backend
 npm install
 npm run dev
 
-# Frontend in monorepo
+# Frontend in monorepo (Next.js 14)
 cd monorepo/apps/frontend
 npm install
 npm run dev
