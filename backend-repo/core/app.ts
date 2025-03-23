@@ -12,8 +12,8 @@ app.use(express.json());
 // Routes
 app.use("/api", userRoutes);
 
-// Health check endpoint
-app.get("/health", (req, res) => {
+//  check endpoint
+app.get("/", (req, res) => {
   res.status(200).json({ status: "ok" });
 });
 

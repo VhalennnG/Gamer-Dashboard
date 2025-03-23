@@ -2,7 +2,7 @@
 import axios from "axios";
 import { User } from "@/interfaces/user";
 
-const API_URL = "http://localhost:5000/api";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/api";
 
 // Creating an axios instance with default config
 const apiClient = axios.create({

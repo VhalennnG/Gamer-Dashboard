@@ -80,12 +80,20 @@ const UserEditForm: React.FC<UserEditFormProps> = ({
     const file = e.target.files?.[0];
     if (!file) return;
 
-    const reader = new FileReader();
-    reader.onload = (event) => {
-      const base64String = event.target?.result as string;
-      setPhotoURL(base64String);
-    };
-    reader.readAsDataURL(file);
+    const maxSize = 100 * 1024;
+    if (file.size > maxSize) {
+      return;
+    } else {
+      const reader = new FileReader();
+      reader.onload = (event) => {
+        const base64String = event.target?.result as string;
+        setPhotoURL(base64String);
+      };
+      reader.onerror = () => {
+        alert("Terjadi kesalahan saat memproses file.");
+      };
+      reader.readAsDataURL(file);
+    }
   };
 
   const handleStatusChange = (newStatus: string) => {

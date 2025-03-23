@@ -11,3 +11,5 @@ build/
 out/
 
 .cache/
+
+backend-repo/serviceAccountKey.json
