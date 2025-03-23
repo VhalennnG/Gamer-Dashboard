@@ -3,7 +3,7 @@
 ## Project Preview
 
 <details>
-<summary>Click to view project preview</summary>
+<summary> ## Click to see project preview </summary>
 
 ![User Profile](./assets/3.png)
 ![Home Page](./assets/1.png)
